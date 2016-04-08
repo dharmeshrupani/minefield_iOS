@@ -10,9 +10,11 @@
 		21F2FA4B1CAB90C500A72551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA4A1CAB90C500A72551 /* AppDelegate.swift */; };
 		21F2FA4D1CAB90C500A72551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA4C1CAB90C500A72551 /* ViewController.swift */; };
 		21F2FA501CAB90C500A72551 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21F2FA4E1CAB90C500A72551 /* Main.storyboard */; };
-		21F2FA521CAB90C500A72551 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21F2FA511CAB90C500A72551 /* Images.xcassets */; };
 		21F2FA551CAB90C500A72551 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21F2FA531CAB90C500A72551 /* LaunchScreen.xib */; };
 		21F2FA611CAB90C500A72551 /* minefieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA601CAB90C500A72551 /* minefieldTests.swift */; };
+		21F2FA6B1CAB9A9200A72551 /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA6A1CAB9A9200A72551 /* Square.swift */; };
+		21F2FA6D1CAB9AD500A72551 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA6C1CAB9AD500A72551 /* Board.swift */; };
+		21F2FA6F1CABABAD00A72551 /* SquareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F2FA6E1CABABAD00A72551 /* SquareButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +33,13 @@
 		21F2FA4A1CAB90C500A72551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		21F2FA4C1CAB90C500A72551 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		21F2FA4F1CAB90C500A72551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		21F2FA511CAB90C500A72551 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		21F2FA541CAB90C500A72551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		21F2FA5A1CAB90C500A72551 /* minefieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = minefieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21F2FA5F1CAB90C500A72551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21F2FA601CAB90C500A72551 /* minefieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minefieldTests.swift; sourceTree = "<group>"; };
+		21F2FA6A1CAB9A9200A72551 /* Square.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
+		21F2FA6C1CAB9AD500A72551 /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		21F2FA6E1CABABAD00A72551 /* SquareButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,7 @@
 		21F2FA3C1CAB90C500A72551 = {
 			isa = PBXGroup;
 			children = (
-				21F2FA471CAB90C500A72551 /* minefield */,
+				21F4315D1CABB299009C9692 /* New Group */,
 				21F2FA5D1CAB90C500A72551 /* minefieldTests */,
 				21F2FA461CAB90C500A72551 /* Products */,
 			);
@@ -80,7 +84,9 @@
 				21F2FA4A1CAB90C500A72551 /* AppDelegate.swift */,
 				21F2FA4C1CAB90C500A72551 /* ViewController.swift */,
 				21F2FA4E1CAB90C500A72551 /* Main.storyboard */,
-				21F2FA511CAB90C500A72551 /* Images.xcassets */,
+				21F2FA6A1CAB9A9200A72551 /* Square.swift */,
+				21F2FA6C1CAB9AD500A72551 /* Board.swift */,
+				21F2FA6E1CABABAD00A72551 /* SquareButton.swift */,
 				21F2FA531CAB90C500A72551 /* LaunchScreen.xib */,
 				21F2FA481CAB90C500A72551 /* Supporting Files */,
 			);
@@ -110,6 +116,14 @@
 				21F2FA5F1CAB90C500A72551 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F4315D1CABB299009C9692 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				21F2FA471CAB90C500A72551 /* minefield */,
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +170,9 @@
 		21F2FA3D1CAB90C500A72551 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Dharmesh Rupani";
 				TargetAttributes = {
 					21F2FA441CAB90C500A72551 = {
@@ -194,7 +210,6 @@
 			files = (
 				21F2FA501CAB90C500A72551 /* Main.storyboard in Resources */,
 				21F2FA551CAB90C500A72551 /* LaunchScreen.xib in Resources */,
-				21F2FA521CAB90C500A72551 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F2FA6F1CABABAD00A72551 /* SquareButton.swift in Sources */,
+				21F2FA6B1CAB9A9200A72551 /* Square.swift in Sources */,
 				21F2FA4D1CAB90C500A72551 /* ViewController.swift in Sources */,
+				21F2FA6D1CAB9AD500A72551 /* Board.swift in Sources */,
 				21F2FA4B1CAB90C500A72551 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +294,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -291,7 +310,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -329,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -342,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = minefield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iApp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -352,6 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = minefield/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iApp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -370,6 +391,7 @@
 				);
 				INFOPLIST_FILE = minefieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iApp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minefield.app/minefield";
 			};
@@ -385,6 +407,7 @@
 				);
 				INFOPLIST_FILE = minefieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iApp.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/minefield.app/minefield";
 			};
@@ -409,6 +432,7 @@
 				21F2FA661CAB90C500A72551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21F2FA671CAB90C500A72551 /* Build configuration list for PBXNativeTarget "minefieldTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +441,7 @@
 				21F2FA691CAB90C500A72551 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
