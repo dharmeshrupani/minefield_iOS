@@ -1,9 +1,9 @@
 //
 //  Board.swift
-//  minefield
+//  Mineswifter
 //
-//  Created by Dharmesh Rupani on 3/30/16.
-//  Copyright (c) 2016 Dharmesh Rupani. All rights reserved.
+//  Created by Benjamin Reynolds on 7/27/14.
+//  Copyright (c) 2014 MakeGamesWithUs. All rights reserved.
 //
 
 import Foundation
@@ -55,7 +55,7 @@ class Board {
         // for each neighbor with a mine, add 1 to this square's count
         for neighborSquare in neighbors {
             if neighborSquare.isMineLocation {
-                numNeighboringMines += 1
+                numNeighboringMines++
             }
         }
         square.numNeighboringMines = numNeighboringMines
@@ -63,10 +63,10 @@ class Board {
     
     func getNeighboringSquares(square : Square) -> [Square] {
         var neighbors:[Square] = []
-        
+
         // an array of tuples containing the relative position of each neighbor to the square
         let adjacentOffsets =
-        [(-1,-1),(0,-1),(1,-1),
+            [(-1,-1),(0,-1),(1,-1),
             (-1,0),(1,0),
             (-1,1),(0,1),(1,1)]
         

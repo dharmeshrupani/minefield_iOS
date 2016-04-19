@@ -1,9 +1,9 @@
 //
 //  Square.swift
-//  minefield
+//  Mineswifter
 //
-//  Created by Dharmesh Rupani on 3/30/16.
-//  Copyright (c) 2016 Dharmesh Rupani. All rights reserved.
+//  Created by Benjamin Reynolds on 7/26/14.
+//  Copyright (c) 2014 MakeGamesWithUs. All rights reserved.
 //
 
 import Foundation
@@ -20,6 +20,6 @@ class Square {
     init(row:Int, col:Int) {
         //store the row and column of the square in the grid
         self.row = row
-        self.col = col
+        self.col = col        
     }
-}
+} 

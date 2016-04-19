@@ -1,9 +1,9 @@
 //
 //  SquareButton.swift
-//  minefield
+//  Mineswifter
 //
-//  Created by Dharmesh Rupani on 3/29/16.
-//  Copyright (c) 2016 Dharmesh Rupani. All rights reserved.
+//  Created by Benjamin Reynolds on 7/27/14.
+//  Copyright (c) 2014 MakeGamesWithUs. All rights reserved.
 //
 
 import UIKit
@@ -20,9 +20,9 @@ class SquareButton : UIButton {
         let y = CGFloat(self.square.row) * squareSize
         let squareFrame = CGRectMake(x, y, squareSize, squareSize)
         
-        super.init(frame: squareFrame)
+        super.init(frame: squareFrame)        
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
